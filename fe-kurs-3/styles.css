@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.display {
+  border: 20px solid #000;
+  width: 100%;
+  text-align: center;
+}
+
+div {
+  border: 10px solid red;
+  width: 100%;
+  padding: 50px;
+}

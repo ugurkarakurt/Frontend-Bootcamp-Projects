@@ -1,0 +1,53 @@
+header {
+  height: 80px;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+}
+
+header .header {
+  height: 100%;
+  width: 1200px;
+  background-color: cadetblue;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+header .header .logo-wrapper {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+}
+
+header .header .logo-wrapper img {
+  width: auto;
+  height: 100%;
+}
+
+header .header .navbar {
+  display: inline-block;
+  width: 74%;
+  text-align: right;
+  height: 100%;
+  vertical-align: top;
+}
+
+header .header .navbar nav, header .header .navbar nav ul {
+  height: 100%;
+}
+
+header .header .navbar nav ul li {
+  vertical-align: middle;
+}
+
+
+header .header .navbar nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header .header .navbar nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
