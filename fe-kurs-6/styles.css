@@ -1,0 +1,27 @@
+.wrapper {
+  height: 200px;
+  width: 100%;
+  border: 5px solid #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 5px;
+
+}
+
+.wrapper span {
+  flex: 1;
+  background-color: red;
+  color: aliceblue;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.wrapper span:nth-child(1) {
+  flex: 2;
+  order: 99;
+}
+
+.wrapper span:nth-child(2) {
+  order: 2;
+}
