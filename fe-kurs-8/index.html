@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <div class="form-wrapper">
+      <form>
+        <div class="form-header">
+          <span>Filter</span>
+          <span>&#10005; </span>
+        </div>
+        <div class="form-body">
+          <section class="search-wrapper">
+            <span class="title">Search by keyword</span>
+            <div class="search">
+              <input type="search" placeholder="Search Jobs">
+              <img src="./assets/img/search-icon.png" alt="icon">
+            </div>
+          </section>
+          <section class="view-wrapper">
+            <span class="title">View</span>
+            <div class="view">
+              <label>
+                <input type="radio" name="views" />
+                All job posts
+              </label>
+              <label>
+                <input type="radio" name="views" />
+                Active job posts
+              </label>
+              <label>
+                <input type="radio" name="views" checked />
+                Archived job posts
+              </label>
+            </div>
+          </section>
+          <section class="include-wrapper">
+            <span class="title">Include</span>
+            <div class="include">
+              <label>
+                <input type="checkbox" name="views" checked />
+                Jobs shared with me
+              </label>
+            </div>
+          </section>
+        </div>
+        <div class="form-footer">
+          <button class="submit">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

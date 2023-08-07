@@ -1,0 +1,245 @@
+@import './reset.scss';
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #232044;
+  color: #BCBACF;
+
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-wrapper {
+      height: 620px;
+      width: 340px;
+      padding: 50px;
+      background-color: #322E59;
+      border-radius: 40px;
+      box-shadow: -25px -25px 0px 4px #1C183B;
+
+      form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form-header {
+          margin-bottom: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-family: 'Times New Roman', Times, serif;
+
+          span {
+            font-size: 32px;
+            font-weight: bold;
+
+            &:nth-child(2) {
+              font-size: 26px;
+              font-weight: lighter;
+            }
+          }
+        }
+
+        .form-body {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1;
+          gap: 30px;
+
+          section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title {
+              font-size: 11px;
+              text-align: start;
+              text-transform: uppercase;
+            }
+
+            label {
+              font-size: 12px;
+              text-align: start;
+              cursor: pointer;
+            }
+
+            input {
+              cursor: pointer;
+            }
+
+            &.search-wrapper {
+              .search {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                  position: absolute;
+                  transition: .2s ease-in-out;
+                  left: 10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 20px;
+                  filter: invert(83%) sepia(8%) saturate(419%) hue-rotate(206deg) brightness(89%) contrast(92%);
+                }
+
+                input {
+                  background-color: #232044;
+                  outline: none;
+                  border: none;
+                  width: 100%;
+                  height: 45px;
+                  border-radius: 5px;
+                  padding: 0 10px 0 45px;
+                  font-size: 12px;
+                  color: #BCBACF;
+                  transition: .2s ease-in-out;
+                  cursor: default;
+
+                  &::placeholder {
+                    color: #9C99B1;
+                  }
+
+                  &:focus {
+                    padding: 0 10px;
+
+                    +img {
+                      transform: translate(-200%, -50%);
+                    }
+
+                  }
+                }
+              }
+            }
+
+            &.view-wrapper {
+              .title {
+                margin-bottom: 10px;
+              }
+
+              .view {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                label {
+                  position: relative;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  padding-left: 30px;
+
+                  input[type="radio"] {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-color: #fff;
+                    margin: 0;
+
+                    &:checked {
+                      &::before {
+                        background: #9C99B1;
+                        box-shadow: inset 0px 0px 0px 3px rgba(35, 32, 68, 1);
+                      }
+                    }
+
+                    &::before {
+                      content: '';
+                      width: 22px;
+                      height: 22px;
+                      border-radius: 50%;
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      transform: translateY(-50%);
+                      background: #232044;
+                      border: 1px solid #9C99B1;
+                    }
+                  }
+                }
+              }
+            }
+
+            &.include-wrapper {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+
+              .include {
+                label {
+                  position: relative;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  padding-left: 40px;
+
+                  input[type="checkbox"] {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-color: #fff;
+                    margin: 0;
+
+                    &:checked {
+                      &::before {
+                        background: #9C99B1;
+                        background-image: url('../img//tick.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 18px;
+                      }
+                    }
+
+                    &::before {
+                      content: '';
+                      width: 25px;
+                      height: 25px;
+                      border-radius: 5px;
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      transform: translateY(-50%);
+                      background: #232044;
+                      border: 1px solid #9C99B1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .form-footer {
+          width: 100%;
+          margin: 20px 0;
+
+          button {
+            background-color: #FFBB56;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 45px;
+            font-size: 12px;
+            transition: .2s ease-in-out;
+            cursor: pointer;
+
+            &:active {
+              position: relative;
+              top: 1px;
+            }
+
+            &:hover {
+              background-color: #fcae3a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

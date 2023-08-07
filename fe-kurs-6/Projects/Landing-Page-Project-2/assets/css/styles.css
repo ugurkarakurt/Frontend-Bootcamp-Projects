@@ -132,6 +132,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  overflow: hidden;
 
 }
 
@@ -147,7 +148,7 @@ body {
   border: 1px solid #81818D;
   border-right: none;
   font-size: 16px;
-  transition: border-color .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .main .container .search-wrapper input::placeholder {
@@ -160,12 +161,13 @@ body {
 }
 
 .main .container .search-wrapper img {
-  transition: opacity .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .main .container .search-wrapper input:focus+img {
-  visibility: hidden;
+  transform: translateX(-100px);
   opacity: 0;
+  visibility: hidden;
 }
 
 .main .container .search-wrapper input:focus+img+button {
