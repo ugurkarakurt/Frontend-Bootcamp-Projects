@@ -144,6 +144,14 @@ body {
       background-color: #322E59;
       border-radius: 40px;
       transition: .2s ease-in-out; }
+      @media (max-width: 768px) {
+        body main .form-wrapper {
+          width: 100%;
+          height: 100%;
+          border-radius: 0; } }
+      @media (max-width: 500px) {
+        body main .form-wrapper {
+          padding: 20px; } }
       body main .form-wrapper:hover {
         box-shadow: -25px -25px 0px 4px #1C183B; }
       body main .form-wrapper form {
@@ -161,10 +169,16 @@ body {
           body main .form-wrapper form .form-header span {
             font-size: 32px;
             font-weight: bold; }
+            @media (max-width: 768px) {
+              body main .form-wrapper form .form-header span {
+                font-size: 50px; } }
             body main .form-wrapper form .form-header span:nth-child(2) {
               font-size: 26px;
               font-weight: lighter;
               cursor: pointer; }
+              @media (max-width: 768px) {
+                body main .form-wrapper form .form-header span:nth-child(2) {
+                  font-size: 30px; } }
         body main .form-wrapper form .form-body {
           display: flex;
           flex-direction: column;
@@ -178,6 +192,9 @@ body {
               font-size: 11px;
               text-align: start;
               text-transform: uppercase; }
+              @media (max-width: 768px) {
+                body main .form-wrapper form .form-body section .title {
+                  font-size: 20px; } }
             body main .form-wrapper form .form-body section label {
               font-size: 12px;
               text-align: start;
@@ -196,6 +213,10 @@ body {
                 transform: translateY(-50%);
                 width: 20px;
                 filter: invert(83%) sepia(8%) saturate(419%) hue-rotate(206deg) brightness(89%) contrast(92%); }
+                @media (max-width: 768px) {
+                  body main .form-wrapper form .form-body section.search-wrapper .search img {
+                    width: 30px;
+                    left: 15px; } }
               body main .form-wrapper form .form-body section.search-wrapper .search input {
                 background-color: #232044;
                 outline: none;
@@ -208,6 +229,11 @@ body {
                 color: #BCBACF;
                 transition: .2s ease-in-out;
                 cursor: default; }
+                @media (max-width: 768px) {
+                  body main .form-wrapper form .form-body section.search-wrapper .search input {
+                    height: 60px;
+                    font-size: 24px;
+                    padding: 0 10px 0 60px; } }
                 body main .form-wrapper form .form-body section.search-wrapper .search input::placeholder {
                   color: #9C99B1; }
                 body main .form-wrapper form .form-body section.search-wrapper .search input:focus {
@@ -226,6 +252,9 @@ body {
                 justify-content: flex-start;
                 align-items: center;
                 padding-left: 30px; }
+                @media (max-width: 768px) {
+                  body main .form-wrapper form .form-body section.view-wrapper .view label {
+                    font-size: 16px; } }
                 body main .form-wrapper form .form-body section.view-wrapper .view label input[type="radio"] {
                   -webkit-appearance: none;
                   appearance: none;
@@ -255,6 +284,9 @@ body {
                 justify-content: flex-start;
                 align-items: center;
                 padding-left: 40px; }
+                @media (max-width: 768px) {
+                  body main .form-wrapper form .form-body section.include-wrapper .include label {
+                    font-size: 16px; } }
                 body main .form-wrapper form .form-body section.include-wrapper .include label input[type="checkbox"] {
                   -webkit-appearance: none;
                   appearance: none;
@@ -290,6 +322,9 @@ body {
             font-size: 12px;
             transition: .2s ease-in-out;
             cursor: pointer; }
+            @media (max-width: 768px) {
+              body main .form-wrapper form .form-footer button {
+                font-size: 20px; } }
             body main .form-wrapper form .form-footer button:active {
               position: relative;
               top: 1px; }
