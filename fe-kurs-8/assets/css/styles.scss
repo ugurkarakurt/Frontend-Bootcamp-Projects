@@ -20,7 +20,11 @@ body {
       padding: 50px;
       background-color: #322E59;
       border-radius: 40px;
-      box-shadow: -25px -25px 0px 4px #1C183B;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        box-shadow: -25px -25px 0px 4px #1C183B;
+      }
 
       form {
         width: 100%;
@@ -43,6 +47,7 @@ body {
             &:nth-child(2) {
               font-size: 26px;
               font-weight: lighter;
+              cursor: pointer;
             }
           }
         }
