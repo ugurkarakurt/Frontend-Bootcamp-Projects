@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+.bulb-wrapper .on-lightbulb {
+  display: none;
+}
+
+.bulb-wrapper.active .on-lightbulb {
+  display: block;
+  filter: drop-shadow(0 0 0.75rem yellow);
+
+}
+
+.bulb-wrapper.active .off-lightbulb {
+  display: none;
+}

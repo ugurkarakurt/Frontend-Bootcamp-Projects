@@ -1,0 +1,139 @@
+JavaScript Engine Nedir? Web Tarayıcılarının Gücü Web tarayıcılarının altında yatan güçlü teknolojilerden biri olan JavaScript Engine, kullanıcıların web siteleriyle etkileşime girebilmesini sağlar. Bu motorlar, tarayıcı içinde veya sunucuda çalışan, JavaScript kodunu anlayan ve yorumlayan programlardır.  Örneğin, popüler bir JavaScript motoru olan Google Chrome'un V8 Engine'i, web sitelerinin dinamik ve etkileşimli olmasını sağlayan temel bir bileşendir.
+JavaScript Engine, kodu adım adım işleyen bir dizi adımdan oluşur. İlk adımda, motor kodu alır ve onu parçalara ayırır. Ardından, parçalara ayrılmış kodu anlaması için bir çeviri sürecine tabi tutar. Bu aşamada, dil kurallarına uygunluğu kontrol edilir. Eğer hatalı bir kod varsa, hata mesajları üretilir. Eğer kod hatasızsa, motor kodu optimize eder, yani daha hızlı çalışması için gerekli düzenlemeleri yapar.
+Örnek: Varsayalım ki, bir web sitesinde bir düğmeye tıkladığınızda metin renginin değişmesini istiyorsunuz. JavaScript Engine, bu tıklama olayını algılar, belirtilen kodu yorumlar ve renk değişikliğini gerçekleştirir. Bu sayede, kullanıcı etkileşimiyle web sitesi daha ilgi çekici hale gelir.
+
+
+JavaScript Runtime Nedir? Kodun Canlandığı Yer
+JavaScript Runtime, JavaScript kodunun çalıştığı ortamı ifade eder. Bu ortam, kodun çalıştığı anı ve koşulları belirler. Tarayıcılar, sunucular ve mobil cihazlar gibi farklı platformlarda JavaScript Runtime kullanılır. JavaScript Runtime, kodun işlenme hızını, erişebileceği kaynakları ve çalışma süresini yönetir.
+JavaScript Runtime, kodunuzu çalıştırmak için gereken tüm bileşenleri sağlar. 
+Örneğin, tarayıcı tabanlı bir Runtime, HTML ve CSS ile entegre olarak çalışır ve DOM (Document Object Model) üzerinde etkileşim sağlar. Bu sayede, kullanıcı etkileşimine dayalı web siteleri oluşturabilirsiniz. Sunucu tabanlı bir Runtime ise Node.js gibi platformlarla çalışır ve sunucu tarafında kodunuzun işlenmesini sağlar.
+Örnek: Bir e-ticaret sitesinde kullanıcının sepetine ürün eklediğinizi düşünün. JavaScript Runtime, kullanıcının sepete tıkladığında ürünün eklenme işlemini yönetir. Tarayıcı tabanlı bir Runtime ise bu işlemi kullanıcının tarayıcısında gerçekleştirirken, sunucu tabanlı bir Runtime ise bu işlemi sunucuda işler.
+JavaScript Runtime, kodunuzu farklı platformlarda uygun şekilde çalıştırmanızı sağlar. 
+
+
+Interpreter, Compiler ve JIT Compiler Nedir? JavaScript Kodunun İşlenme Yolları
+JavaScript kodunun işlenmesi, farklı yöntemlerle gerçekleşir. Interpreter, Compiler ve JIT Compiler gibi kavramlar, JavaScript kodunun nasıl çalıştığını belirler. Bu yazıda, bu kavramları JavaScript bağlamında anlamaya çalışacağız.
+Interpreter, kodunuzu satır satır okur ve anında çalıştırır. Yani, bir JavaScript kodu yazdığınızda, her satırın sonuçlarını hemen görebilirsiniz.
+Örneğin, tarayıcılar genellikle JavaScript kodunu interpreter ile çalıştırır. Bu yöntem, kodun hızlıca denemeye uygun olmasını sağlar, ancak bazen performansı etkileyebilir.
+Compiler, kodunuzu tamamen işler ve makine diline çevirir. Sonuç olarak, kodunuz derlendikten sonra daha hızlı çalışır. Ancak, derleme süreci nedeniyle kodunuzun anında çalışması zorlaşabilir. Örneğin, JavaScript kodunu başka bir dile çeviren TypeScript gibi araçlar kullanarak bir compiler yaklaşımı benimseyebilirsiniz.
+JIT Compiler (Just-In-Time Compiler) ise bir karışım gibidir. Önceden derleme gibi tüm kodu işlemez, ama tamamen interpreter gibi de satır satır işlemez. JIT Compiler, JavaScript kodun belirli bölümlerini derler ve ardından bu derlenmiş kodu işlemci için anlayabilir hale getirir. Bu, kodun hem hızlı çalışmasını hem de kolay test edilebilirliğini sağlar. Örneğin, modern JavaScript motorları, JavaScript kodunu JIT Compiler ile çalıştırır.
+Örnek: Diyelim ki, bir web sayfasında kullanıcının tıkladığı bir düğmeyle bir hesaplama yapılmasını istiyorsunuz. Eğer hızlı denemeler yapmak istiyorsanız, interpreter yaklaşımı kullanabilirsiniz. Fakat büyük bir projede performans önemliyse, kodunuzu compiler yaklaşımıyla optimize edebilirsiniz. Hem hız hem de test edilebilirlik açısından en iyi dengeyi sağlamak içinse JIT Compiler kullanımı tercih edilebilir.
+
+
+Optimize Edilmiş Kod Nasıl Yazılır? JavaScript Performansını Artırma Yolları
+JavaScript kodunun performansını artırmak, web siteleri ve uygulamaların daha hızlı ve etkili çalışmasını sağlar. Optimize edilmiş kod yazmak, hem kullanıcı deneyimini geliştirir hem de daha verimli bir çalışma sağlar. Bu yazıda, optimize edilmiş kod yazmanın temel yöntemlerini öğreneceğiz.
+1. Verimli Algoritmalar Kullanın: İyi bir algoritma seçimi, kodunuzun hızını büyük ölçüde etkiler. Örneğin, bir listedeki elemanları sıralamak için en uygun algoritmayı kullanmak, işlem süresini azaltabilir.
+2. Değişken ve Fonksiyon Optimizasyonu: Değişkenlerin ve fonksiyonların gereksiz yere tekrar hesaplanmasını önlemek, kodunuzu optimize eder. Aynı hesaplamayı birden fazla kez yapmaktansa sonucu bir değişkende saklamak, performansı artırır.
+3. Loops ve Iterasyonlar: Döngülerin ve yinelemelerin etkili kullanımı önemlidir. Gereksiz yere döngüler içinde fazla hesaplama yapmak yerine, döngüleri en az sayıda işlemle tamamlamak performans açısından önemlidir.
+4. Tarayıcı Uyumlu Kod Yazmak: Farklı tarayıcıların farklı hız ve özelliklere sahip olduğunu unutmayın. Kodunuzu farklı tarayıcılarda test ederek uyumluluğunu sağlamak, performansı artırmanın bir parçasıdır.
+5. Bellek Yönetimi: Bellek sızıntılarını önlemek ve gereksiz bellek kullanımını engellemek kodunuzun verimli çalışmasını sağlar. Kullanılmayan nesneleri zamanında serbest bırakmak önemlidir.
+Örnek: Diyelim ki, bir liste içindeki en büyük sayıyı bulmanız gerekiyor. Eğer liste çok uzunsa, doğrusal bir döngü yerine daha hızlı çalışan bir algoritma kullanmak (örneğin sıralama) daha optimize bir yaklaşım olabilir.
+
+
+Call Stack ve Memory Heap Nedir? JavaScript'te İşlem ve Bellek Yönetimi
+JavaScript kodunun işlemesi sırasında iki önemli kavram, Call Stack ve Memory Heap, rol oynar. Call Stack, kodun nasıl işlendiğini yönetirken, Memory Heap ise verilerin nasıl depolandığını kontrol eder. Bu yazıda, bu iki kavramı basitçe anlamaya çalışacağız.
+Devam Açıklaması: Call Stack (Çağrı Yığını), kodun çalıştığı sırayı takip eder. Bir fonksiyon çağrıldığında, o fonksiyon Call Stack'e eklenir. Fonksiyon çalıştırıldığında ise Call Stack'de üstte yer alır ve işlem yapar. Fonksiyon tamamlandığında ise Call Stack'den çıkar. Bu yöntem, kodun sıralı ve düzenli bir şekilde işlenmesini sağlar.
+Memory Heap (Bellek Yığını), dinamik olarak oluşturulan verilerin depolandığı alandır. Örneğin, değişkenler, nesneler ve diziler Memory Heap'te saklanır. Bellek yönetimi, gereksiz bellek sızıntılarını önlemek ve bellek kullanımını optimize etmek açısından önemlidir. Bellek yönetimi sağlayan "Garbage Collector," kullanılmayan nesneleri bellekten temizler.
+Örnek: Bir JavaScript fonksiyonunu düşünün. Bu fonksiyon bir değeri iki katına çıkarıyor. Fonksiyon çağrıldığında, ilk olarak Call Stack'e eklenir. Ardından işlem yapar ve sonucu döndürür. Bu süreçte bellekte kullanılan veriler Memory Heap'te depolanır. Fonksiyon tamamlandığında, Call Stack'den çıkar ve bellekte kullanılan alan da temizlenir.
+
+
+Stack Overflow ve Memory Leaks: JavaScript'te Sorunlar ve Çözümler
+JavaScript kodunun işlenmesi sırasında bazı yaygın sorunlar ortaya çıkabilir. Stack Overflow ve Memory Leaks, bu sorunlardan ikisidir. Bu yazıda, bu iki sorunun ne olduğunu ve nasıl çözülebileceğini öğreneceğiz.
+Stack Overflow (Yığın Taşması), bir fonksiyonun kendini sonsuz bir şekilde çağırması sonucunda ortaya çıkan bir sorundur. Call Stack, belirli bir derinliğe sahiptir ve eğer bu derinlik aşılırsa Stack Overflow hatası alınır. Bu genellikle özyinelemeli (recursive) fonksiyonlarda ve döngülerde dikkat edilmesi gereken bir durumdur.
+Memory Leaks (Bellek Sızıntıları), kullanılmayan nesnelerin veya verilerin bellekte temizlenmeden kalması sonucunda ortaya çıkar. Bellek sızıntıları, bellek kullanımını artırabilir ve uygulamanızın yavaşlamasına neden olabilir. Genellikle gereksiz nesnelerin referanslarının düzgün şekilde temizlenmemesi nedeniyle oluşur.
+Çözüm Önerileri:
+* Stack Overflow hatasını önlemek için özyinelemeli fonksiyonlarda veya döngülerde mutlaka bir çıkış koşulu belirleyin.
+* Bellek sızıntılarını önlemek için gereksiz nesneleri ve referansları düzenli olarak temizleyen bir "Garbage Collector" mekanizması kullanın.
+* Uygulamanızı düzenli olarak inceleyin ve gereksiz fonksiyon çağrılarını veya nesne oluşturmalarını gözden geçirin.
+Örnek: Bir özyinelemeli fonksiyon, kendisini çağırarak devam ederse, Call Stack derinliği aşılır ve Stack Overflow hatası alırsınız. Aynı şekilde, kullanılmayan bir nesnenin referansı gereksiz yere tutulursa, bellekte bu nesne için yer ayrılmaya devam eder ve bellek sızıntısı oluşur.
+Bu yazıda, JavaScript'te ortaya çıkabilen Stack Overflow ve Memory Leaks sorunlarını anladınız. Bu sorunların önüne geçmek için doğru kodlama yöntemlerini ve bellek yönetimini kullanmak önemlidir. Bir sonraki yazıda, JavaScript'te hata yakalama ve hata yönetimi konularını ele alacağız.
+
+
+Garbage Collection Nedir? Bellek Yönetiminde JavaScript'in Temel Mekanizması
+JavaScript gibi dinamik dillerde, bellek yönetimi önemlidir çünkü gereksiz bellek kullanımı performansı düşürebilir. Garbage Collection (Çöp Toplama), kullanılmayan nesneleri tespit ederek bellekten temizlemeyi amaçlar. Bu yazıda, Garbage Collection'ın ne olduğunu ve nasıl çalıştığını öğreneceğiz.
+Garbage Collection, program çalışırken artık kullanılmayan nesnelerin bellekten otomatik olarak temizlenmesini sağlar. Bellekte yer kaplayan ve artık erişilemeyen nesnelerin bu şekilde temizlenmesi, bellek sızıntılarını engeller ve performansı artırır. Garbage Collector, genellikle JavaScript motoru tarafından otomatik olarak yönetilir.
+Garbage Collection Yöntemleri:
+* Referans Sayacı (Reference Counting): Bu yöntemde, bir nesnenin kaç referansa sahip olduğu sayılır. Referans sayısı sıfır olduğunda nesne bellekten temizlenir. Ancak bu yöntem döngüsel referanslarda (nesnelerin birbirine referans vermesi) başarısız olabilir.
+* Garbage Collector (Çöp Toplayıcı): Bu yöntemde, erişilemeyen nesnelerin belirlenmesi için algoritma kullanılır. Algoritma, hangi nesnelerin kullanıldığını ve hangilerinin kullanılmadığını analiz eder. Erişilemeyen nesneleri tespit ederek bellekten temizler.
+Örnek: Diyelim ki, bir JavaScript uygulamasında bir nesne oluşturuldu ancak artık bu nesneye erişim yok. Garbage Collector, bu nesneyi tespit eder ve bellekten temizler. Bu sayede gereksiz bellek kullanımı engellenir.
+
+
+Tek İş Parçacıklı Model Nedir? JavaScript'in Eş Zamanlı İşlem Yapısı
+JavaScript, temelde tek iş parçacıklı (single threaded) bir modelde çalışır. Bu demektir ki, JavaScript kodu aynı anda yalnızca bir işlemi gerçekleştirebilir. Bu yazıda, tek iş parçacıklı modelin ne olduğunu ve JavaScript'in bu yapıyı nasıl kullanarak eş zamanlı işlem yaptığını öğreneceğiz.
+Tek İş Parçacıklı Model, JavaScript'in aynı anda sadece bir işlemi gerçekleştirebileceği anlamına gelir. Diğer bir deyişle, JavaScript kodu sırayla çalışır ve bir işlem bitmeden diğerine geçmez. Bu nedenle, bir işlem yavaşladığında diğer işlemler de etkilenebilir.
+JavaScript, tarayıcılarda veya sunucularda çalışırken bu tek iş parçacıklı modeli takip eder. Ancak, bu model performans sorunlarına neden olabilir, özellikle uzun süren işlemlerde sayfa veya uygulama donabilir.
+Örnek: Bir web sayfasında kullanıcının butona tıkladığını düşünün. Bu butona tıkladığınızda, JavaScript kodu bu tıklamayı işler ve diğer işlemleri bekletir. Eğer bu işlem çok uzun sürerse, sayfa kullanıcının tepkilerine cevap vermeden donabilir.
+
+
+Execution Context Nedir? JavaScript Kodunun Çalışma Ortamının Anatomisi
+Execution Context (Yürütme Bağlamı), JavaScript kodunun çalışma zamanındaki ortamını ve koşullarını temsil eder. Her JavaScript kod parçası, yani fonksiyon veya global düzeydeki kod, kendi execution context'ine sahiptir. Bu yazıda, Execution Context'in bileşenlerini ve nasıl çalıştığını ayrıntılı bir şekilde inceleyeceğiz.
+Execution Context, kodun çalışma anında nasıl işlendiğini yöneten bir kavramdır. Her fonksiyonun ve global düzeydeki kodun bir execution context'i vardır. Bir execution context, üç temel bileşen içerir:
+* Variable Object (Değişken Nesnesi): Execution context içinde tanımlanan değişkenler ve fonksiyonlar burada saklanır. Bu nesne, değişkenlerin adlarını ve referanslarını içerir.
+* Scope Chain (Kapsam Zinciri): Her execution context, kendisini çevreleyen dışarıdaki execution context'lere erişebilir. Bu kapsam zinciri, değişken arama sırasında kullanılır. Bir değişken önceki execution context'lerde bulunamazsa, zincir boyunca yukarı çıkarak aranır.
+* This Value (Bu Değeri): "this" ifadesi, her execution context içinde farklı anlamlar taşıyabilir. Fonksiyonun nasıl çağrıldığına veya hangi nesne içinde bulunduğuna bağlı olarak "this" değeri belirlenir.
+Execution Context İşleyişi:
+* Bir kod parçası çalıştırıldığında, bir execution context oluşturulur ve kodun çalıştırılmasına başlanır.
+* Değişkenler ve fonksiyonlar, bu execution context içinde tanımlanır ve Variable Object'e eklenir.
+* Kapsam zinciri, dışarıdaki execution context'lere erişim sağlar.
+* "this" değeri, execution context'in içeriğine göre belirlenir.
+* Kod işlemi tamamlandığında, execution context sonlanır ve bellekten temizlenir.
+Örnek: Bir fonksiyonun içinde tanımlanan bir değişken, sadece o fonksiyonun execution context'inde geçerlidir. Eğer bir değişken dışarıdan bu fonksiyona erişmeye çalışırsa, kapsam zinciri kullanılarak erişilmeye çalışılır.
+
+
+Lexical Environment Nedir? Değişkenlerin ve Kapsamların Belirlendiği Ortam
+Lexical Environment, JavaScript kodunun içindeki değişkenlerin, fonksiyonların ve kapsamların nasıl organize edildiğini belirleyen bir kavramdır. Bu kavram, bir kod parçasının nerede tanımlandığını ve nasıl kullanıldığını belirler. Bu yazıda, Lexical Environment'in ne olduğunu ve nasıl çalıştığını ayrıntılı bir şekilde inceleyeceğiz.
+Lexical Environment (Sözcüksel Çevre), bir kod parçasının içindeki değişkenlerin ve fonksiyonların nasıl tanımlandığını ve nasıl erişildiğini düzenler. Bu çevre, kodun yazıldığı sıraya göre belirlenir. Bir Lexical Environment, iki temel bileşenden oluşur:
+* Environment Record (Çevre Kaydı): Bu bölüm, kodun içindeki değişkenlerin ve fonksiyonların saklandığı alandır. Değişkenler ve fonksiyonlar, burada adlarına göre gruplanır ve referanslarla saklanır.
+* Outer Environment Reference (Dış Çevre Referansı): Bu, Lexical Environment'in çevre zincirindeki bir önceki çevreye işaret eder. Bu sayede, iç içe geçmiş kapsamlarda değişken araması yaparken kullanılır.
+Lexical Environment İşleyişi:
+* Her yeni fonksiyon veya kod parçası çalıştırıldığında yeni bir Lexical Environment oluşturulur.
+* Değişkenler ve fonksiyonlar, bu ortamın Environment Record kısmına kaydedilir.
+* Eğer iç içe geçmiş fonksiyonlar veya kapsamlar varsa, Outer Environment Reference bu zinciri oluşturur.
+* Değişken veya fonksiyon kullanıldığında, Lexical Environment içindeki Environment Record'dan ilgili değer alınır.
+* İşlem tamamlandığında, Lexical Environment bellekten temizlenir.
+Örnek: Bir iç içe geçmiş fonksiyonun içinde tanımlanan bir değişken, Lexical Environment zinciri sayesinde doğru çevrede saklanır. İç fonksiyon dışındaki değişkenlere ise dış çevre referansı aracılığıyla erişilir.
+
+
+Scope Chain Nedir? Değişken Aramalarının ve Erişim Sırasının Düzenlendiği Zincir
+Scope Chain (Kapsam Zinciri), JavaScript'te değişkenlerin aranma ve erişim sırasını belirleyen bir kavramdır. Bu zincir, değişken arandığında hangi kapsam içinde önce arama yapılacağını gösterir. Bu yazıda, Scope Chain'in ne olduğunu ve nasıl işlediğini ayrıntılı bir şekilde inceleyeceğiz.
+Scope Chain (Kapsam Zinciri), değişkenlerin ve fonksiyonların hangi sırayla aranacağını belirleyen bir yapıdır. Her zaman, değişken veya fonksiyon arandığında, en içteki yani en yakın kapsamdan başlayarak dışarı doğru arama yapılır. Bu zincir, iç içe geçmiş fonksiyonlarda veya bloklarda değişkenlerin aranmasını düzenler.
+Kapsam zinciri, Lexical Environment (Sözcüksel Çevre) yapısıyla bağlantılıdır. Her Lexical Environment, bir dış çerçeve referansı ile bir önceki çevreye bağlıdır. Bu bağlantı, kapsam zincirini oluşturur. Bir değişken veya fonksiyon, iç çerçeveden başlayarak Scope Chain boyunca yukarı çıkarak aranır.
+
+
+Hoisting Nedir? Değişken ve Fonksiyon Tanımlamalarının İşlem Sırasının Önemi
+Hoisting, JavaScript'te değişken ve fonksiyon tanımlamalarının işlem sırasına göre yukarı taşındığı bir kavramdır. Bu durum, kodun göründüğü gibi çalışmadığı bir durumu ifade eder. Bu yazıda, Hoisting'in ne olduğunu ve nasıl çalıştığını detaylı bir şekilde inceleyeceğiz.
+Hoisting, JavaScript motorunun, kodun çalıştırılmasından önce değişken ve fonksiyon tanımlamalarını yukarı taşıdığı bir süreçtir. Yani, bir değişken veya fonksiyonu kodun başında tanımlamış gibi işlem yapar. Ancak, bu sadece tanımlama kısmını etkiler, atama veya çalıştırma anlamında bir değişiklik yapmaz.
+
+Function Invocation Nedir? JavaScript'te Fonksiyonların Çağrılması ve İşlemesi
+Function Invocation, JavaScript'te tanımlanan fonksiyonların çağrılması ve işlemesini ifade eder. Bir fonksiyon çağrıldığında, tanımlanan kod bloğu çalıştırılır ve belirtilen parametrelerle işlemler gerçekleştirilir. Bu yazıda, Function Invocation'ın ne olduğunu ve nasıl çalıştığını ayrıntılı bir şekilde inceleyeceğiz.
+Function Invocation (Fonksiyon Çağrısı), bir fonksiyonun çağrıldığı anlamına gelir. Bir fonksiyon, tanımlandığında sadece kodun bir "taslağını" oluşturur. Fonksiyon çağrıldığında ise bu kod çalıştırılır ve belirtilen parametrelerle işlem yapılır.
+Function Invocation, fonksiyonların kodunun tekrar tekrar kullanılmasını ve farklı parametrelerle çalıştırılmasını sağlar. Bu da kodun daha modüler ve esnek olmasını sağlar.
+
+
+Function Scope ve Block Scope Nedir? Kapsamlar Arasındaki Farklar
+Function Scope ve Block Scope, JavaScript'te değişkenlerin ve fonksiyonların hangi alanlarda erişilebilir olduğunu belirleyen kavramlardır. Function Scope, değişkenlerin yalnızca fonksiyonların içinde geçerli olduğu kapsamı ifade ederken, Block Scope ise değişkenlerin ifadelerin içinde geçerli olduğu kapsamı ifade eder. Bu yazıda, Function Scope ve Block Scope'un farklarını ayrıntılı bir şekilde inceleyeceğiz.
+Function Scope (Fonksiyon Kapsamı), değişkenlerin yalnızca tanımlandığı fonksiyon içinde erişilebilir olduğu kapsam türüdür. Fonksiyon dışında tanımlanan değişkenlere fonksiyon içinden erişmek mümkün değildir.
+Block Scope (Blok Kapsamı), değişkenlerin ifade blokları (örneğin, if, for, while gibi) içinde geçerli olduğu kapsam türüdür. Blok dışında tanımlanan değişkenlere blok içinden erişmek mümkün değildir.
+ES6 (ECMAScript 2015) ile birlikte, let ve const değişken tanımlamaları kullanılarak Block Scope oluşturulabilir. Bu, değişkenlerin yalnızca ifade bloklarında geçerli olduğu anlamına gelir.
+Özetle:
+* Function Scope, değişkenlerin yalnızca tanımlandığı fonksiyon içinde erişilebilir olduğu kapsam türünü ifade eder.
+* Block Scope, değişkenlerin ifade blokları içinde (ES6'da "let" veya "const" kullanılarak) geçerli olduğu kapsam türünü ifade eder.
+
+
+Dynamic Scope ve Lexical Scope Nedir? Kapsam Türleri Arasındaki Farklar
+Dynamic Scope ve Lexical Scope, JavaScript'te değişkenlerin hangi alanlarda erişilebilir olduğunu belirleyen iki farklı kapsam türüdür. Dynamic Scope, değişkenlerin fonksiyonun nereden çağrıldığına göre belirlendiği kapsam türüdür. Lexical Scope ise değişkenlerin kodun nerede tanımlandığına göre belirlendiği kapsam türüdür. Bu yazıda, Dynamic Scope ve Lexical Scope'un farklarını ayrıntılı bir şekilde inceleyeceğiz.
+Dynamic Scope (Dinamik Kapsam), değişkenlerin fonksiyonun nereden çağrıldığına göre belirlendiği kapsam türüdür. Yani, bir fonksiyon içindeki değişkenler, fonksiyonun hangi kod parçasından çağrıldığına bağlı olarak farklı değerlere sahip olabilir.
+Lexical Scope (Sözcüksel Kapsam), değişkenlerin kodun nerede tanımlandığına göre belirlendiği kapsam türüdür. Değişkenler, tanımlandığı kapsam içinde geçerli olur ve iç içe geçmiş fonksiyonlar veya ifade blokları tarafından etkilenmez.
+ES6 (ECMAScript 2015) ile birlikte gelen let ve const değişken tanımlamaları, Lexical Scope oluşturur. Yani, bu değişkenlerin kapsamı, tanımlandığı kod bloğuna göre belirlenir.
+Özetle:
+* Dynamic Scope, değişkenlerin fonksiyonun nereden çağrıldığına göre belirlendiği kapsam türünü ifade eder.
+* Lexical Scope, değişkenlerin kodun nerede tanımlandığına göre belirlendiği kapsam türünü ifade eder.
+
+
+Context ve Scope Nedir? Kavramlar Arasındaki Farklar
+Context ve Scope, JavaScript'te değişkenlerin ve fonksiyonların hangi alanlarda erişilebilir olduğunu ve hangi nesnenin işlendiğini belirleyen iki farklı kavramdır. Scope, değişkenlerin hangi kısımda erişilebilir olduğunu belirlerken, Context, fonksiyonların hangi nesne üzerinde çalıştığını belirler. Bu yazıda, Context ve Scope'un farklarını ayrıntılı bir şekilde inceleyeceğiz.
+Scope (Kapsam), bir kod parçasının içinde geçerli olan değişkenlerin ve fonksiyonların hangi alanlarda erişilebilir olduğunu belirler. Kısacası, Scope, değişkenlerin ve fonksiyonların "nerede görünür" olduğunu tanımlar.
+Context (Bağlam), bir fonksiyonun çalıştığı veya bir nesnenin içinde olduğu ortamı ifade eder. Fonksiyonların "this" değeri, o fonksiyonun çalıştığı bağlamı belirler.
+Genel olarak, Scope değişkenlerin ve fonksiyonların erişimini belirlerken, Context fonksiyonların hangi nesnenin içinde çalıştığını belirler.
+
+
