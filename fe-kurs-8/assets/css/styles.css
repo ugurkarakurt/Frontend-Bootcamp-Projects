@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html,
 body,
@@ -87,7 +88,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -101,234 +103,297 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   height: 100vh;
   background-color: #232044;
-  color: #BCBACF; }
-  body main {
+  color: #BCBACF;
+}
+body main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .form-wrapper {
+  height: 620px;
+  width: 340px;
+  padding: 50px;
+  background-color: #322E59;
+  border-radius: 40px;
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    body main .form-wrapper {
-      height: 620px;
-      width: 340px;
-      padding: 50px;
-      background-color: #322E59;
-      border-radius: 40px;
-      transition: .2s ease-in-out; }
-      @media (max-width: 768px) {
-        body main .form-wrapper {
-          width: 100%;
-          height: 100%;
-          border-radius: 0; } }
-      @media (max-width: 500px) {
-        body main .form-wrapper {
-          padding: 20px; } }
-      body main .form-wrapper:hover {
-        box-shadow: -25px -25px 0px 4px #1C183B; }
-      body main .form-wrapper form {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; }
-        body main .form-wrapper form .form-header {
-          margin-bottom: 40px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-family: 'Times New Roman', Times, serif; }
-          body main .form-wrapper form .form-header span {
-            font-size: 32px;
-            font-weight: bold; }
-            @media (max-width: 768px) {
-              body main .form-wrapper form .form-header span {
-                font-size: 50px; } }
-            body main .form-wrapper form .form-header span:nth-child(2) {
-              font-size: 26px;
-              font-weight: lighter;
-              cursor: pointer; }
-              @media (max-width: 768px) {
-                body main .form-wrapper form .form-header span:nth-child(2) {
-                  font-size: 30px; } }
-        body main .form-wrapper form .form-body {
-          display: flex;
-          flex-direction: column;
-          flex: 1 1;
-          gap: 30px; }
-          body main .form-wrapper form .form-body section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px; }
-            body main .form-wrapper form .form-body section .title {
-              font-size: 11px;
-              text-align: start;
-              text-transform: uppercase; }
-              @media (max-width: 768px) {
-                body main .form-wrapper form .form-body section .title {
-                  font-size: 20px; } }
-            body main .form-wrapper form .form-body section label {
-              font-size: 12px;
-              text-align: start;
-              cursor: pointer; }
-            body main .form-wrapper form .form-body section input {
-              cursor: pointer; }
-            body main .form-wrapper form .form-body section.search-wrapper .search {
-              position: relative;
-              width: 100%;
-              overflow: hidden; }
-              body main .form-wrapper form .form-body section.search-wrapper .search img {
-                position: absolute;
-                transition: .2s ease-in-out;
-                left: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 20px;
-                filter: invert(83%) sepia(8%) saturate(419%) hue-rotate(206deg) brightness(89%) contrast(92%); }
-                @media (max-width: 768px) {
-                  body main .form-wrapper form .form-body section.search-wrapper .search img {
-                    width: 30px;
-                    left: 15px; } }
-              body main .form-wrapper form .form-body section.search-wrapper .search input {
-                background-color: #232044;
-                outline: none;
-                border: none;
-                width: 100%;
-                height: 45px;
-                border-radius: 5px;
-                padding: 0 10px 0 45px;
-                font-size: 12px;
-                color: #BCBACF;
-                transition: .2s ease-in-out;
-                cursor: default; }
-                @media (max-width: 768px) {
-                  body main .form-wrapper form .form-body section.search-wrapper .search input {
-                    height: 60px;
-                    font-size: 24px;
-                    padding: 0 10px 0 60px; } }
-                body main .form-wrapper form .form-body section.search-wrapper .search input::placeholder {
-                  color: #9C99B1; }
-                body main .form-wrapper form .form-body section.search-wrapper .search input:focus {
-                  padding: 0 10px; }
-                  body main .form-wrapper form .form-body section.search-wrapper .search input:focus + img {
-                    transform: translate(-200%, -50%); }
-            body main .form-wrapper form .form-body section.view-wrapper .title {
-              margin-bottom: 10px; }
-            body main .form-wrapper form .form-body section.view-wrapper .view {
-              display: flex;
-              flex-direction: column;
-              gap: 20px; }
-              body main .form-wrapper form .form-body section.view-wrapper .view label {
-                position: relative;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                padding-left: 30px; }
-                @media (max-width: 768px) {
-                  body main .form-wrapper form .form-body section.view-wrapper .view label {
-                    font-size: 16px; } }
-                body main .form-wrapper form .form-body section.view-wrapper .view label input[type="radio"] {
-                  -webkit-appearance: none;
-                  appearance: none;
-                  background-color: #fff;
-                  margin: 0; }
-                  body main .form-wrapper form .form-body section.view-wrapper .view label input[type="radio"]:checked::before {
-                    background: #9C99B1;
-                    box-shadow: inset 0px 0px 0px 3px #232044; }
-                  body main .form-wrapper form .form-body section.view-wrapper .view label input[type="radio"]::before {
-                    content: '';
-                    width: 22px;
-                    height: 22px;
-                    border-radius: 50%;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    background: #232044;
-                    border: 1px solid #9C99B1; }
-            body main .form-wrapper form .form-body section.include-wrapper {
-              display: flex;
-              flex-direction: column;
-              gap: 20px; }
-              body main .form-wrapper form .form-body section.include-wrapper .include label {
-                position: relative;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                padding-left: 40px; }
-                @media (max-width: 768px) {
-                  body main .form-wrapper form .form-body section.include-wrapper .include label {
-                    font-size: 16px; } }
-                body main .form-wrapper form .form-body section.include-wrapper .include label input[type="checkbox"] {
-                  -webkit-appearance: none;
-                  appearance: none;
-                  background-color: #fff;
-                  margin: 0; }
-                  body main .form-wrapper form .form-body section.include-wrapper .include label input[type="checkbox"]:checked::before {
-                    background: #9C99B1;
-                    background-image: url("../img//tick.png");
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 18px; }
-                  body main .form-wrapper form .form-body section.include-wrapper .include label input[type="checkbox"]::before {
-                    content: '';
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 5px;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    background: #232044;
-                    border: 1px solid #9C99B1; }
-        body main .form-wrapper form .form-footer {
-          width: 100%;
-          margin: 20px 0; }
-          body main .form-wrapper form .form-footer button {
-            background-color: #FFBB56;
-            border: none;
-            outline: none;
-            border-radius: 5px;
-            width: 100%;
-            height: 45px;
-            font-size: 12px;
-            transition: .2s ease-in-out;
-            cursor: pointer; }
-            @media (max-width: 768px) {
-              body main .form-wrapper form .form-footer button {
-                font-size: 20px; } }
-            body main .form-wrapper form .form-footer button:active {
-              position: relative;
-              top: 1px; }
-            body main .form-wrapper form .form-footer button:hover {
-              background-color: #fcae3a; }
-
-/*# sourceMappingURL=styles.css.map */
+    border-radius: 0;
+  }
+}
+@media (max-width: 500px) {
+  body main .form-wrapper {
+    padding: 20px;
+  }
+}
+body main .form-wrapper:hover {
+  box-shadow: -25px -25px 0px 4px #1C183B;
+}
+body main .form-wrapper form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .form-wrapper form .form-header {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+body main .form-wrapper form .form-header span {
+  font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-header span {
+    font-size: 50px;
+  }
+}
+body main .form-wrapper form .form-header span:nth-child(2) {
+  font-size: 26px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-header span:nth-child(2) {
+    font-size: 30px;
+  }
+}
+body main .form-wrapper form .form-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  gap: 30px;
+}
+body main .form-wrapper form .form-body section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body main .form-wrapper form .form-body section .title {
+  font-size: 11px;
+  text-align: start;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-body section .title {
+    font-size: 20px;
+  }
+}
+body main .form-wrapper form .form-body section label {
+  font-size: 12px;
+  text-align: start;
+  cursor: pointer;
+}
+body main .form-wrapper form .form-body section input {
+  cursor: pointer;
+}
+body main .form-wrapper form .form-body section.search-wrapper .search {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+body main .form-wrapper form .form-body section.search-wrapper .search img {
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  filter: invert(83%) sepia(8%) saturate(419%) hue-rotate(206deg) brightness(89%) contrast(92%);
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-body section.search-wrapper .search img {
+    width: 30px;
+    left: 15px;
+  }
+}
+body main .form-wrapper form .form-body section.search-wrapper .search input {
+  background-color: #232044;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  padding: 0 10px 0 45px;
+  font-size: 12px;
+  color: #BCBACF;
+  transition: 0.2s ease-in-out;
+  cursor: default;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-body section.search-wrapper .search input {
+    height: 60px;
+    font-size: 24px;
+    padding: 0 10px 0 60px;
+  }
+}
+body main .form-wrapper form .form-body section.search-wrapper .search input::-moz-placeholder {
+  color: #9C99B1;
+}
+body main .form-wrapper form .form-body section.search-wrapper .search input::placeholder {
+  color: #9C99B1;
+}
+body main .form-wrapper form .form-body section.search-wrapper .search input:focus {
+  padding: 0 10px;
+}
+body main .form-wrapper form .form-body section.search-wrapper .search input:focus + img {
+  transform: translate(-200%, -50%);
+}
+body main .form-wrapper form .form-body section.view-wrapper .title {
+  margin-bottom: 10px;
+}
+body main .form-wrapper form .form-body section.view-wrapper .view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .form-wrapper form .form-body section.view-wrapper .view label {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-body section.view-wrapper .view label {
+    font-size: 16px;
+  }
+}
+body main .form-wrapper form .form-body section.view-wrapper .view label input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+body main .form-wrapper form .form-body section.view-wrapper .view label input[type=radio]:checked::before {
+  background: #9C99B1;
+  box-shadow: inset 0px 0px 0px 3px rgb(35, 32, 68);
+}
+body main .form-wrapper form .form-body section.view-wrapper .view label input[type=radio]::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #232044;
+  border: 1px solid #9C99B1;
+}
+body main .form-wrapper form .form-body section.include-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .form-wrapper form .form-body section.include-wrapper .include label {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-body section.include-wrapper .include label {
+    font-size: 16px;
+  }
+}
+body main .form-wrapper form .form-body section.include-wrapper .include label input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+body main .form-wrapper form .form-body section.include-wrapper .include label input[type=checkbox]:checked::before {
+  background: #9C99B1;
+  background-image: url("../img//tick.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+body main .form-wrapper form .form-body section.include-wrapper .include label input[type=checkbox]::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #232044;
+  border: 1px solid #9C99B1;
+}
+body main .form-wrapper form .form-footer {
+  width: 100%;
+  margin: 20px 0;
+}
+body main .form-wrapper form .form-footer button {
+  background-color: #FFBB56;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  font-size: 12px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body main .form-wrapper form .form-footer button {
+    font-size: 20px;
+  }
+}
+body main .form-wrapper form .form-footer button:active {
+  position: relative;
+  top: 1px;
+}
+body main .form-wrapper form .form-footer button:hover {
+  background-color: #fcae3a;
+}/*# sourceMappingURL=styles.css.map */

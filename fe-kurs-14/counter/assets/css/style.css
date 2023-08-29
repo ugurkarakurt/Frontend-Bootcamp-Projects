@@ -84,7 +84,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -98,46 +99,55 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 html,
 body {
   width: 100%;
   height: 100%;
   background: #3494E6;
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
   background: linear-gradient(to right, #EC6EAD, #3494E6);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
 body {
   display: flex;
   justify-content: center;
-  align-items: flex-start; }
-  @media (max-width: 768px) {
-    body {
-      align-items: stretch; } }
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  body {
+    align-items: stretch;
+  }
+}
 
 .container {
   width: 200px;
@@ -149,55 +159,63 @@ body {
   padding: 40px;
   border: 5px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #DC72B3, #598EDD); }
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-      transform: none;
-      padding-top: 200px;
-      justify-content: flex-start;
-      border-width: 20px; } }
-  .container h1 {
+  border-image-source: linear-gradient(to left, #DC72B3, #598EDD);
+}
+@media (max-width: 768px) {
+  .container {
     width: 100%;
-    font-size: 40px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #fff; }
-  .container .screen-wrapper {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .container .screen-wrapper input {
-      flex: 1 1;
-      height: 40px;
-      border: none;
-      outline: none;
-      background-color: #8085CF;
-      border-radius: 3px;
-      padding: 0 10px;
-      color: #fff;
-      border: 1px solid; }
-  .container .actions-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px; }
-    .container .actions-wrapper button {
-      flex: 1 1;
-      border: 1px solid;
-      outline: none;
-      height: 30px;
-      border-radius: 3px;
-      background-color: #8085CF;
-      color: #fff;
-      cursor: pointer; }
-      .container .actions-wrapper button:active {
-        position: relative;
-        top: 1px; }
-      .container .actions-wrapper button:last-child {
-        flex: 3 1; }
-
-/*# sourceMappingURL=style.css.map */
+    transform: none;
+    padding-top: 200px;
+    justify-content: flex-start;
+    border-width: 20px;
+  }
+}
+.container h1 {
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+.container .screen-wrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .screen-wrapper input {
+  flex: 1 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #8085CF;
+  border-radius: 3px;
+  padding: 0 10px;
+  color: #fff;
+  border: 1px solid;
+}
+.container .actions-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.container .actions-wrapper button {
+  flex: 1 1;
+  border: 1px solid;
+  outline: none;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #8085CF;
+  color: #fff;
+  cursor: pointer;
+}
+.container .actions-wrapper button:active {
+  position: relative;
+  top: 1px;
+}
+.container .actions-wrapper button:last-child {
+  flex: 3 1;
+}/*# sourceMappingURL=style.css.map */

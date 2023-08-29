@@ -1,0 +1,20 @@
+.alert-message-wrapper {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+
+  #alertMessagePopup {
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &.warning {
+      background-color: #D3393C;
+      color: #fff;
+    }
+
+    &.success {
+      background-color: #0397AB;
+      color: #fff;
+    }
+  }
+}

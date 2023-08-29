@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="" type="image/icon">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Work with APIs</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo-list">
+      <div class="todo-list-header">
+        <div class="todo-list-title">
+          <h1>To Do List</h1>
+        </div>
+        <div class="add-todo-wrapper">
+          <input class="add-todo-input js-add-todo-input" type="text" placeholder="Add to do">
+          <select class="add-status-input js-add-status-input">
+            <option value="">Select Status</option>
+            <option value="todo">To do</option>
+            <option value="in_progress">In Progress</option>
+            <option value="complete">Complete</option>
+          </select>
+          <button type="button" class="add-todo-button js-add-todo-button active">Add To Do</button>
+          <button type="button" class="edit-todo-button js-edit-todo-button">Edit To Do</button>
+        </div>
+      </div>
+      <div class="todo-list-table">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Task Name</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="todo-list-table-body js-todo-list-table-body">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="alert-message-wrapper js-alert-message-wrapper"></div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+
+</html>
